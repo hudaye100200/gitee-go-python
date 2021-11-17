@@ -10,8 +10,7 @@ stages:
         name: build_python
         displayName: Python 构建
         pythonVersion: '3.9'
-        commands:
-          #- python3 -m pip install --upgrade pip
+        commands: 
           - pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
           - pip3 install -r requirements.txt
           - python3 ./main.py
